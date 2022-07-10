@@ -1,12 +1,13 @@
 const express = require("express");
 const routes = express.Router();
 
-const puppeteer = require('puppeteer-extra')
-const StealthPlugin = require('puppeteer-extra-plugin-stealth')
-puppeteer.use(StealthPlugin())
+const puppeteer = require("puppeteer-extra");
+const StealthPlugin = require("puppeteer-extra-plugin-stealth");
+puppeteer.use(StealthPlugin());
 
-const schedule = require('node-schedule');
+const schedule = require("node-schedule");
 
+const fs = require("fs");
 
 function delay(time) {
   return new Promise((resolve) => setTimeout(resolve, time));
@@ -18,9 +19,9 @@ routes.get("/", (req, res) => {
 
 routes.get("/api", (req, res) => {
   (async () => {
-    const browser = await puppeteer.launch({ headless: true });
+    const browser = await puppeteer.launch({ headless: false });
     const page = await browser.newPage();
-    
+
     let pages = 3;
     let test = [];
     for (let i = 1; pages >= i; i++) {
@@ -30,12 +31,6 @@ routes.get("/api", (req, res) => {
         `https://www.pcdiga.com/componentes/placas-graficas/placas-graficas-nvidia?produtos_por_pagina=36&pagina=${i}`
       );
 
-const { solved ,error } = await page.solveRecaptchas();
-if(solved){
-  console.log("captcha solved")
-}else{
-  console.log(error);
-}
       //GPU NAME
       await page
         .waitForXPath(
@@ -83,6 +78,7 @@ if(solved){
           price: gpuPrice[i2],
           priceHistory: [],
         };
+
         test.push(arr);
       }
     }
@@ -95,7 +91,7 @@ if(solved){
       "-" +
       today.getFullYear();
 
-      let arr2 = test.priceHistory;
+    let arr2 = test.priceHistory;
     for (let i2 = 0; test.length > i2; i2++) {
       let price = {
         price: test[i2].price,
@@ -104,8 +100,61 @@ if(solved){
       arr2 = test[i2].priceHistory;
       arr2.push(price);
     }
-    //console.log(test);
     await browser.close();
+    //----------------------------------------------------------
+
+    if (!fs.existsSync("sample.json")) {
+      let data = JSON.stringify(test);
+      console.log(data);
+      fs.writeFile("sample.json", data, function (err) {
+        if (err) throw err;
+        console.log("File is created successfully.");
+      });
+    } else {
+      const fileData = JSON.parse(fs.readFileSync("sample.json"));
+
+      for (let i2 = 0; test.length > i2; i2++) {
+        if (userExists(test[i2].id) == true) {
+          console.log("existe");
+          if (priceSame(test[i2].price,test[i2].id) == true) {
+            console.log("Preço igual "+ test[i2].price);
+          }else{
+            console.log("Preço diferente")
+            //Mudar agora no ficheiro JSON
+            fileData[i2].price = test[i2].price
+          }
+        } else {
+          console.log("não existe");
+
+          let arr = {
+            id: test[i2].id,
+            name: test[i2].name,
+            price: test[i2].price,
+            priceHistory: [],
+          };
+          fileData.push(arr);
+          fs.writeFileSync("sample.json", JSON.stringify(fileData));
+        }
+      }
+      console.log(test.length);
+      console.log(fileData.length);
+    }
+
+    function userExists(username) {
+      const fileData = JSON.parse(fs.readFileSync("sample.json"));
+      return fileData.some(function (el) {
+        return el.id === username;
+      });
+    }
+
+    function priceSame(price,id) {
+      const fileData = JSON.parse(fs.readFileSync("sample.json"));
+      return fileData.some(function (el) {
+        console.log(el.price+" equals "+price)
+        return el.price === price && el.id === id;
+      });
+    }
+
     return res.json(test);
   })();
 });
