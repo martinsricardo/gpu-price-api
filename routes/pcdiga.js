@@ -119,7 +119,7 @@ routes.get("/api", (req, res) => {
           if (priceSame(test[i2].price,test[i2].id) == true) {
             console.log("Preço igual "+ test[i2].price);
           }else{
-            console.log("Preço diferente")
+            console.log("Preço diferentes")
             //Mudar agora no ficheiro JSON
             fileData[i2].price = test[i2].price
           }
