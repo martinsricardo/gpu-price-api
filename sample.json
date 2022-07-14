@@ -1,608 +1,611 @@
 [
   {
-    "id": "ZT-A30600E-10M",
-    "name": "Placa Gráfica Zotac Gaming GeForce RTX 3060 12GB GDDR6 Twin Edge",
-    "price": "429,90 €",
-    "priceHistory": [{ "price": "429,90 €", "date": "10-7-2022" }]
+    "id": "912-V397-251",
+    "name": "Placa Gráfica MSI GeForce RTX 3060 Ti Ventus 2X 8G GDDR6 V1 LHR",
+    "price": "499,90 €",
+    "priceHistory": [{ "price": "499,90 €", "date": "12-7-2022" }]
   },
   {
     "id": "ZT-A30700E-10PLHR",
     "name": "Placa Grafica Zotac Gaming Geforce RTX 3070 Twin Edge LHR 8GB GDDR6",
     "price": "589,90 €",
-    "priceHistory": [{ "price": "589,90 €", "date": "10-7-2022" }]
-  },
-  {
-    "id": "ZT-A30800D-10PLHR",
-    "name": "Placa Gráfica Zotac Gaming GeForce RTX 3080 10GB GDDR6X Trinity LHR",
-    "price": "859,90 €",
-    "priceHistory": [{ "price": "859,90 €", "date": "10-7-2022" }]
-  },
-  {
-    "id": "912-V397-251",
-    "name": "Placa Gráfica MSI GeForce RTX 3060 Ti Ventus 2X 8G GDDR6 V1 LHR",
-    "price": "499,90 €",
-    "priceHistory": [{ "price": "499,90 €", "date": "10-7-2022" }]
-  },
-  {
-    "id": "912-V390-405",
-    "name": "Placa Gráfica MSI GeForce RTX 3070 Ventus 2X 8G OC LHR",
-    "price": "614,90 €",
-    "priceHistory": [{ "price": "614,90 €", "date": "10-7-2022" }]
-  },
-  {
-    "id": "GV-N3060GAMING OC-12GD 2.0",
-    "name": "Placa Gráfica Gigabyte GeForce RTX 3060 Gaming OC 12GB GDDR6",
-    "price": "469,90 €",
-    "priceHistory": [{ "price": "469,90 €", "date": "10-7-2022" }]
+    "priceHistory": [{ "price": "589,90 €", "date": "12-7-2022" }]
   },
   {
     "id": "912-V397-431",
     "name": "Placa Gráfica MSI GeForce RTX 3050 Ventus 2X 8G OC",
     "price": "334,90 €",
-    "priceHistory": [{ "price": "334,90 €", "date": "10-7-2022" }]
+    "priceHistory": [{ "price": "334,90 €", "date": "12-7-2022" }]
   },
   {
-    "id": "ZT-A30910B-10P",
-    "name": "Placa Gráfica Zotac Gaming GeForce RTX 3090 Ti AMP Extreme Holo 24GB GDDR6X",
-    "price": "1899,90 €",
-    "priceHistory": [{ "price": "1899,90 €", "date": "10-7-2022" }]
-  },
-  {
-    "id": "ZT-A30710J-10P",
-    "name": "Placa Gráfica Zotac Gaming GeForce RTX 3070 Ti 8GB GDDR6X Trinity OC Triple Fan",
-    "price": "759,90 €",
-    "priceHistory": [{ "price": "759,90 €", "date": "10-7-2022" }]
-  },
-  {
-    "id": "GV-N3070EAGLE OC-8GD 2.0",
-    "name": "Placa Gráfica Gigabyte GeForce RTX 3070 Eagle 8GB GDDR6 OC Edition (rev. 2.0) LHR",
-    "price": "659,90 €",
-    "priceHistory": [{ "price": "659,90 €", "date": "10-7-2022" }]
-  },
-  {
-    "id": "ZT-A30610H-10MLHR",
-    "name": "Placa Gráfica Zotac Gaming GeForce RTX 3060 Ti 8GB GDDR6 Twin Edge OC LHR",
-    "price": "558,90 €",
-    "priceHistory": [{ "price": "558,90 €", "date": "10-7-2022" }]
-  },
-  {
-    "id": "912-V809-3445",
-    "name": "Placa Gráfica MSI GeForce GTX 1650 D6 Ventus XS OC",
-    "price": "222,90 €",
-    "priceHistory": [{ "price": "222,90 €", "date": "10-7-2022" }]
+    "id": "912-V390-405",
+    "name": "Placa Gráfica MSI GeForce RTX 3070 Ventus 2X 8G OC LHR",
+    "price": "614,90 €",
+    "priceHistory": [{ "price": "614,90 €", "date": "12-7-2022" }]
   },
   {
     "id": "912-V389-427",
     "name": "Placa Gráfica MSI GeForce RTX 3080 Ventus 3X Plus 12G OC LHR",
     "price": "1029,90 €",
-    "priceHistory": [{ "price": "1029,90 €", "date": "10-7-2022" }]
+    "priceHistory": [{ "price": "1029,90 €", "date": "12-7-2022" }]
+  },
+  {
+    "id": "ZT-A30910B-10P",
+    "name": "Placa Gráfica Zotac Gaming GeForce RTX 3090 Ti AMP Extreme Holo 24GB GDDR6X",
+    "price": "1899,90 €",
+    "priceHistory": [{ "price": "1899,90 €", "date": "12-7-2022" }]
+  },
+  {
+    "id": "ZT-A30710J-10P",
+    "name": "Placa Gráfica Zotac Gaming GeForce RTX 3070 Ti 8GB GDDR6X Trinity OC Triple Fan",
+    "price": "759,90 €",
+    "priceHistory": [{ "price": "759,90 €", "date": "12-7-2022" }]
+  },
+  {
+    "id": "GV-N3060GAMING OC-12GD 2.0",
+    "name": "Placa Gráfica Gigabyte GeForce RTX 3060 Gaming OC 12GB GDDR6",
+    "price": "469,90 €",
+    "priceHistory": [{ "price": "469,90 €", "date": "12-7-2022" }]
+  },
+  {
+    "id": "ZT-A30610H-10MLHR",
+    "name": "Placa Gráfica Zotac Gaming GeForce RTX 3060 Ti 8GB GDDR6 Twin Edge OC LHR",
+    "price": "558,90 €",
+    "priceHistory": [{ "price": "558,90 €", "date": "12-7-2022" }]
+  },
+  {
+    "id": "ZT-A30800D-10PLHR",
+    "name": "Placa Gráfica Zotac Gaming GeForce RTX 3080 10GB GDDR6X Trinity LHR",
+    "price": "859,90 €",
+    "priceHistory": [{ "price": "859,90 €", "date": "12-7-2022" }]
   },
   {
     "id": "912-V397-240",
     "name": "Placa Gráfica MSI GeForce RTX 3060 Ti Gaming X 8G LHR",
     "price": "639,90 €",
-    "priceHistory": [{ "price": "639,90 €", "date": "10-7-2022" }]
+    "priceHistory": [{ "price": "639,90 €", "date": "12-7-2022" }]
   },
   {
-    "id": "ZT-A30820J-10PLHR",
-    "name": "Placa Gráfica Zotac Gaming GeForce RTX 3080 12GB GDDR6X Trinity OC LHR",
-    "price": "1009,90 €",
-    "priceHistory": [{ "price": "1009,90 €", "date": "10-7-2022" }]
+    "id": "GV-N3070EAGLE OC-8GD 2.0",
+    "name": "Placa Gráfica Gigabyte GeForce RTX 3070 Eagle 8GB GDDR6 OC Edition (rev. 2.0) LHR",
+    "price": "659,90 €",
+    "priceHistory": [{ "price": "659,90 €", "date": "12-7-2022" }]
   },
   {
-    "id": "ZT-A30500H-10M",
-    "name": "Placa Gráfica Zotac Gaming GeForce RTX 3050 Twin Edge OC 8GB GDDR6",
-    "price": "349,90 €",
-    "priceHistory": [{ "price": "349,90 €", "date": "10-7-2022" }]
-  },
-  {
-    "id": "GV-N308TAORUS M-12GD 1.0",
-    "name": "Placa Gráfica Gigabyte Aorus GeForce RTX 3080 Ti Master 12G GDDR6X",
-    "price": "1809,90 €",
-    "priceHistory": [{ "price": "1809,90 €", "date": "10-7-2022" }]
-  },
-  {
-    "id": "912-V375-279",
-    "name": "Placa Gráfica MSI GeForce GTX 1660 SUPER Ventus XS OC 6G",
-    "price": "294,90 €",
-    "priceHistory": [{ "price": "294,90 €", "date": "10-7-2022" }]
+    "id": "912-V809-3445",
+    "name": "Placa Gráfica MSI GeForce GTX 1650 D6 Ventus XS OC",
+    "price": "222,90 €",
+    "priceHistory": [{ "price": "222,90 €", "date": "12-7-2022" }]
   },
   {
     "id": "912-V375-685",
     "name": "Placa Gráfica MSI GeForce RTX 2060 Ventus OC 12G",
     "price": "379,90 €",
-    "priceHistory": [{ "price": "379,90 €", "date": "10-7-2022" }]
+    "priceHistory": [{ "price": "379,90 €", "date": "12-7-2022" }]
   },
   {
     "id": "ZT-A30600F-10P",
     "name": "Placa Gráfica Zotac Gaming GeForce RTX 3060 12GB GDDR6 AMP White Edition",
     "price": "519,90 €",
-    "priceHistory": [{ "price": "519,90 €", "date": "10-7-2022" }]
+    "priceHistory": [{ "price": "519,90 €", "date": "12-7-2022" }]
+  },
+  {
+    "id": "912-V375-279",
+    "name": "Placa Gráfica MSI GeForce GTX 1660 SUPER Ventus XS OC 6G",
+    "price": "281,90 €",
+    "priceHistory": [{ "price": "281,90 €", "date": "12-7-2022" }]
   },
   {
     "id": "GV-N2060D6-​6GD (REV. 2.0)",
     "name": "Placa Gráfica Gigabyte GeForce RTX 2060 D6 6G (rev. 2.0)",
     "price": "339,90 €",
-    "priceHistory": [{ "price": "339,90 €", "date": "10-7-2022" }]
+    "priceHistory": [{ "price": "339,90 €", "date": "12-7-2022" }]
   },
   {
-    "id": "ZT-T16520F-10L",
-    "name": "Placa Gráfica Zotac Gaming GeForce GTX 1650 OC 4GB",
-    "price": "209,90 €",
-    "priceHistory": [{ "price": "209,90 €", "date": "10-7-2022" }]
-  },
-  {
-    "id": "912-V809-2405",
-    "name": "Placa Gráfica MSI GeForce GTX 1050 Ti 4GT LP",
-    "price": "189,90 €",
-    "priceHistory": [{ "price": "189,90 €", "date": "10-7-2022" }]
+    "id": "ZT-A30820J-10PLHR",
+    "name": "Placa Gráfica Zotac Gaming GeForce RTX 3080 12GB GDDR6X Trinity OC LHR",
+    "price": "1009,90 €",
+    "priceHistory": [{ "price": "1009,90 €", "date": "12-7-2022" }]
   },
   {
     "id": "GV-N3080GAMING OC-12GD",
     "name": "Placa Gráfica Gigabyte RTX 3080 Gaming OC 12GB GDDR6X LHR",
     "price": "1393,90 €",
-    "priceHistory": [{ "price": "1393,90 €", "date": "10-7-2022" }]
+    "priceHistory": [{ "price": "1393,90 €", "date": "12-7-2022" }]
   },
   {
-    "id": "12G-P5-3967-KR",
-    "name": "Placa Gráfica EVGA GeForce RTX 3080 Ti FTW3 Ultra Gaming 12GB GDDR6X",
-    "price": "1687,90 €",
-    "priceHistory": [{ "price": "1687,90 €", "date": "10-7-2022" }]
+    "id": "912-V809-2405",
+    "name": "Placa Gráfica MSI GeForce GTX 1050 Ti 4GT LP",
+    "price": "189,90 €",
+    "priceHistory": [{ "price": "189,90 €", "date": "12-7-2022" }]
+  },
+  {
+    "id": "ZT-T16520F-10L",
+    "name": "Placa Gráfica Zotac Gaming GeForce GTX 1650 OC 4GB",
+    "price": "209,90 €",
+    "priceHistory": [{ "price": "209,90 €", "date": "12-7-2022" }]
+  },
+  {
+    "id": "ZT-A30500H-10M",
+    "name": "Placa Gráfica Zotac Gaming GeForce RTX 3050 Twin Edge OC 8GB GDDR6",
+    "price": "349,90 €",
+    "priceHistory": [{ "price": "349,90 €", "date": "12-7-2022" }]
   },
   {
     "id": "912-V809-3616",
     "name": "Placa Gráfica MSI GeForce GTX 1650 D6 Ventus XS 4G OCV1",
     "price": "219,90 €",
-    "priceHistory": [{ "price": "219,90 €", "date": "10-7-2022" }]
-  },
-  {
-    "id": "90YV0DT0-M0NA00",
-    "name": "Placa Gráfica Asus GeForce GTX 1660 SUPER Phoenix 6GB OC",
-    "price": "349,90 €",
-    "priceHistory": [{ "price": "349,90 €", "date": "10-7-2022" }]
+    "priceHistory": [{ "price": "219,90 €", "date": "12-7-2022" }]
   },
   {
     "id": "GV-N306TGAMING OC-8GD 2.0",
     "name": "Placa Gráfica Gigabyte GeForce RTX 3060 Ti Gaming 8G OC Edition (rev. 2.0) LHR",
     "price": "649,90 €",
-    "priceHistory": [{ "price": "649,90 €", "date": "10-7-2022" }]
-  },
-  {
-    "id": "90YV0CT7-M0NA00",
-    "name": "Placa Gráfica Asus GeForce GTX 1660 Ti Evo TUF Gaming 6GB GDDR6 OC Edition",
-    "price": "425,90 €",
-    "priceHistory": [{ "price": "425,90 €", "date": "10-7-2022" }]
-  },
-  {
-    "id": "ZT-71115-20L",
-    "name": "Placa Gráfica Zotac GeForce GT 730 4GB Zone Edition",
-    "price": "99,90 €",
-    "priceHistory": [{ "price": "99,90 €", "date": "10-7-2022" }]
-  },
-  {
-    "id": "ZT-A30500F-10M",
-    "name": "Placa Gráfica Zotac Gaming GeForce RTX 3050 Amp 8GB GDDR6",
-    "price": "399,90 €",
-    "priceHistory": [{ "price": "399,90 €", "date": "10-7-2022" }]
-  },
-  {
-    "id": "ZT-A30900J-10P",
-    "name": "Placa Gráfica Zotac Gaming GeForce RTX 3090 24GB GDDR6X Trinity OC",
-    "price": "1739,90 €",
-    "priceHistory": [{ "price": "1739,90 €", "date": "10-7-2022" }]
-  },
-  {
-    "id": "912-V509-004",
-    "name": "Placa Gráfica MSI GeForce RTX 3090 Ti Gaming X Trio 24G",
-    "price": "2054,90 €",
-    "priceHistory": [{ "price": "2054,90 €", "date": "10-7-2022" }]
-  },
-  {
-    "id": "912-V389-059",
-    "name": "Placa Gráfica MSI GeForce RTX 3080 Ti Ventus 3X 12G OC",
-    "price": "1399,90 €",
-    "priceHistory": [{ "price": "1399,90 €", "date": "10-7-2022" }]
-  },
-  {
-    "id": "900-5G172-2540-000",
-    "name": "Placa Gráfica Nvidia Quadro T400 4GB GDDR6",
-    "price": "159,90 €",
-    "priceHistory": [{ "price": "159,90 €", "date": "10-7-2022" }]
-  },
-  {
-    "id": "912-V509-003",
-    "name": "Placa Gráfica MSI GeForce RTX 3090 Ti Suprim X 24G",
-    "price": "2499,90 €",
-    "priceHistory": [{ "price": "2499,90 €", "date": "10-7-2022" }]
-  },
-  {
-    "id": "VCG7302D3SFPPB",
-    "name": "Placa Gráfica PNY GeForce GT 730 Single Fan Low Profile 2GB DDR3",
-    "price": "75,90 €",
-    "priceHistory": [{ "price": "75,90 €", "date": "10-7-2022" }]
-  },
-  {
-    "id": "90YV0H20-M0NA00",
-    "name": "Placa Gráfica Asus GeForce GT 730 2GB GDDR5 Passive Cooling",
-    "price": "89,90 €",
-    "priceHistory": [{ "price": "89,90 €", "date": "10-7-2022" }]
-  },
-  {
-    "id": "4719072968731",
-    "name": "Placa Gráfica MSI GeForce RTX 3090 Ti Black Trio 24G",
-    "price": "2044,90 €",
-    "priceHistory": [{ "price": "2044,90 €", "date": "10-7-2022" }]
-  },
-  {
-    "id": "912-V397-430",
-    "name": "Placa Gráfica MSI GeForce RTX 3050 Gaming X 8G",
-    "price": "409,90 €",
-    "priceHistory": [{ "price": "409,90 €", "date": "10-7-2022" }]
-  },
-  {
-    "id": "912-V397-019",
-    "name": "Placa Gráfica MSI GeForce RTX 3060 Gaming X 12G",
-    "price": "507,90 €",
-    "priceHistory": [{ "price": "507,90 €", "date": "10-7-2022" }]
-  },
-  {
-    "id": "912-V397-449",
-    "name": "Placa Grafica MSI GeForce RTX 3050 Ventus 2X 8G",
-    "price": "339,90 €",
-    "priceHistory": [{ "price": "339,90 €", "date": "10-7-2022" }]
+    "priceHistory": [{ "price": "649,90 €", "date": "12-7-2022" }]
   },
   {
     "id": "ZT-T16620F-10L",
     "name": "Placa Gráfica Zotac Gaming GeForce GTX 1660 SUPER Twin Fan 6GB",
     "price": "299,90 €",
-    "priceHistory": [{ "price": "299,90 €", "date": "10-7-2022" }]
-  },
-  {
-    "id": "ZT-A30900Q-30P",
-    "name": "Placa Gráfica Zotac Gaming GeForce RTX 3090 24GB GDDR6X ArcticStorm",
-    "price": "1999,90 €",
-    "priceHistory": [{ "price": "1999,90 €", "date": "10-7-2022" }]
-  },
-  {
-    "id": "ZT-A30810J-10P",
-    "name": "Placa Gráfica Zotac Gaming Geforce RTX 3080 Ti 12GB GDDR6X Trinity OC Triple Fan",
-    "price": "1419,90 €",
-    "priceHistory": [{ "price": "1419,90 €", "date": "10-7-2022" }]
-  },
-  {
-    "id": "ZT-A30710D-10P",
-    "name": "Placa Gráfica Zotac Gaming GeForce RTX 3070 Ti 8GB GDDR6X Trinity",
-    "price": "749,90 €",
-    "priceHistory": [{ "price": "749,90 €", "date": "10-7-2022" }]
-  },
-  {
-    "id": "ZT-A30810F-10P",
-    "name": "Placa Gráfica Zotac Gaming Geforce RTX 3080 Ti 12GB GDDR6X AMP Holo",
-    "price": "1559,90 €",
-    "priceHistory": [{ "price": "1559,90 €", "date": "10-7-2022" }]
-  },
-  {
-    "id": "GV-N308TVISION OC-12GD",
-    "name": "Placa Gráfica Gigabyte GeForce RTX 3080 Ti Vision 12G GDDR6X OC",
-    "price": "1699,90 €",
-    "priceHistory": [{ "price": "1699,90 €", "date": "10-7-2022" }]
+    "priceHistory": [{ "price": "299,90 €", "date": "12-7-2022" }]
   },
   {
     "id": "ZT-T20600H-10M",
     "name": "Placa Gráfica Zotac Gaming GeForce RTX 2060 6GB",
     "price": "389,90 €",
-    "priceHistory": [{ "price": "389,90 €", "date": "10-7-2022" }]
+    "priceHistory": [{ "price": "389,90 €", "date": "12-7-2022" }]
   },
   {
-    "id": "VCG309024TFXMPB",
-    "name": "Placa Gráfica PNY GeForce RTX 3090 24GB GDDR6X XLR8 Gaming EPIC-X RGB Triple Fan",
-    "price": "2059,90 €",
-    "priceHistory": [{ "price": "2059,90 €", "date": "10-7-2022" }]
+    "id": "90YV0CT7-M0NA00",
+    "name": "Placa Gráfica Asus GeForce GTX 1660 Ti Evo TUF Gaming 6GB GDDR6 OC Edition",
+    "price": "425,90 €",
+    "priceHistory": [{ "price": "425,90 €", "date": "12-7-2022" }]
   },
   {
-    "id": "90YV0DS3-M0NA00",
-    "name": "Placa Gráfica Asus GeForce GTX 1660 SUPER Dual 6GB OC EVO",
-    "price": "359,90 €",
-    "priceHistory": [{ "price": "359,90 €", "date": "10-7-2022" }]
+    "id": "ZT-71115-20L",
+    "name": "Placa Gráfica Zotac GeForce GT 730 4GB Zone Edition",
+    "price": "99,90 €",
+    "priceHistory": [{ "price": "99,90 €", "date": "12-7-2022" }]
+  },
+  {
+    "id": "90YV0H20-M0NA00",
+    "name": "Placa Gráfica Asus GeForce GT 730 2GB GDDR5 Passive Cooling",
+    "price": "89,90 €",
+    "priceHistory": [{ "price": "89,90 €", "date": "12-7-2022" }]
+  },
+  {
+    "id": "ZT-A30900J-10P",
+    "name": "Placa Gráfica Zotac Gaming GeForce RTX 3090 24GB GDDR6X Trinity OC",
+    "price": "1739,90 €",
+    "priceHistory": [{ "price": "1739,90 €", "date": "12-7-2022" }]
+  },
+  {
+    "id": "912-V509-004",
+    "name": "Placa Gráfica MSI GeForce RTX 3090 Ti Gaming X Trio 24G",
+    "price": "2054,90 €",
+    "priceHistory": [{ "price": "2054,90 €", "date": "12-7-2022" }]
+  },
+  {
+    "id": "912-V389-059",
+    "name": "Placa Gráfica MSI GeForce RTX 3080 Ti Ventus 3X 12G OC",
+    "price": "1399,90 €",
+    "priceHistory": [{ "price": "1399,90 €", "date": "12-7-2022" }]
+  },
+  {
+    "id": "912-V509-003",
+    "name": "Placa Gráfica MSI GeForce RTX 3090 Ti Suprim X 24G",
+    "price": "2499,90 €",
+    "priceHistory": [{ "price": "2499,90 €", "date": "12-7-2022" }]
+  },
+  {
+    "id": "4719072968731",
+    "name": "Placa Gráfica MSI GeForce RTX 3090 Ti Black Trio 24G",
+    "price": "2044,90 €",
+    "priceHistory": [{ "price": "2044,90 €", "date": "12-7-2022" }]
+  },
+  {
+    "id": "912-V397-430",
+    "name": "Placa Gráfica MSI GeForce RTX 3050 Gaming X 8G",
+    "price": "409,90 €",
+    "priceHistory": [{ "price": "409,90 €", "date": "12-7-2022" }]
+  },
+  {
+    "id": "912-V397-449",
+    "name": "Placa Grafica MSI GeForce RTX 3050 Ventus 2X 8G",
+    "price": "339,90 €",
+    "priceHistory": [{ "price": "339,90 €", "date": "12-7-2022" }]
+  },
+  {
+    "id": "ZT-A30900Q-30P",
+    "name": "Placa Gráfica Zotac Gaming GeForce RTX 3090 24GB GDDR6X ArcticStorm",
+    "price": "1999,90 €",
+    "priceHistory": [{ "price": "1999,90 €", "date": "12-7-2022" }]
+  },
+  {
+    "id": "ZT-A30810J-10P",
+    "name": "Placa Gráfica Zotac Gaming Geforce RTX 3080 Ti 12GB GDDR6X Trinity OC Triple Fan",
+    "price": "1419,90 €",
+    "priceHistory": [{ "price": "1419,90 €", "date": "12-7-2022" }]
+  },
+  {
+    "id": "ZT-A30710D-10P",
+    "name": "Placa Gráfica Zotac Gaming GeForce RTX 3070 Ti 8GB GDDR6X Trinity",
+    "price": "749,90 €",
+    "priceHistory": [{ "price": "749,90 €", "date": "12-7-2022" }]
+  },
+  {
+    "id": "GV-N308TVISION OC-12GD",
+    "name": "Placa Gráfica Gigabyte GeForce RTX 3080 Ti Vision 12G GDDR6X OC",
+    "price": "1699,90 €",
+    "priceHistory": [{ "price": "1699,90 €", "date": "12-7-2022" }]
+  },
+  {
+    "id": "ZT-A30810F-10P",
+    "name": "Placa Gráfica Zotac Gaming Geforce RTX 3080 Ti 12GB GDDR6X AMP Holo",
+    "price": "1559,90 €",
+    "priceHistory": [{ "price": "1559,90 €", "date": "12-7-2022" }]
+  },
+  {
+    "id": "900-5G172-2540-000",
+    "name": "Placa Gráfica Nvidia Quadro T400 4GB GDDR6",
+    "price": "159,90 €",
+    "priceHistory": [{ "price": "159,90 €", "date": "12-7-2022" }]
   },
   {
     "id": "VCQP400DVIV2-PB",
     "name": "Placa Gráfica PNY NVIDIA Quadro P400 V2 DVI",
     "price": "112,90 €",
-    "priceHistory": [{ "price": "112,90 €", "date": "10-7-2022" }]
+    "priceHistory": [{ "price": "112,90 €", "date": "12-7-2022" }]
   },
   {
-    "id": "GV-N2060WF2OC-12GD",
-    "name": "Placa Gráfica Gigabyte GeForce RTX 2060 Windforce OC 12G",
-    "price": "617,90 €",
-    "priceHistory": [{ "price": "617,90 €", "date": "10-7-2022" }]
+    "id": "VCG309024TFXMPB",
+    "name": "Placa Gráfica PNY GeForce RTX 3090 24GB GDDR6X XLR8 Gaming EPIC-X RGB Triple Fan",
+    "price": "2059,90 €",
+    "priceHistory": [{ "price": "2059,90 €", "date": "12-7-2022" }]
+  },
+  {
+    "id": "90YV0DS3-M0NA00",
+    "name": "Placa Gráfica Asus GeForce GTX 1660 SUPER Dual 6GB OC EVO",
+    "price": "359,90 €",
+    "priceHistory": [{ "price": "359,90 €", "date": "12-7-2022" }]
   },
   {
     "id": "90YV0CH2-M0NA00",
     "name": "Placa Gráfica Asus GeForce RTX 2060 Dual 6GB OC EVO",
     "price": "449,90 €",
-    "priceHistory": [{ "price": "449,90 €", "date": "10-7-2022" }]
+    "priceHistory": [{ "price": "449,90 €", "date": "12-7-2022" }]
   },
   {
-    "id": "GV-N166SOC-6GD",
-    "name": "Placa Gráfica Gigabyte GeForce GTX 1660 SUPER 6GB OC",
-    "price": "459,90 €",
-    "priceHistory": [{ "price": "459,90 €", "date": "10-7-2022" }]
-  },
-  {
-    "id": "GV-​N307TAORUS M-8GD",
-    "name": "Placa Gráfica Gigabyte GeForce RTX 3070 Ti Aorus Master 8GB GDDR6X",
-    "price": "1074,90 €",
-    "priceHistory": [{ "price": "1074,90 €", "date": "10-7-2022" }]
+    "id": "GV-N2060WF2OC-12GD",
+    "name": "Placa Gráfica Gigabyte GeForce RTX 2060 Windforce OC 12G",
+    "price": "617,90 €",
+    "priceHistory": [{ "price": "617,90 €", "date": "12-7-2022" }]
   },
   {
     "id": "90YV0DS5-M0NA00",
     "name": "Placa Gráfica Asus GeForce GTX 1660 SUPER Dual 6GB EVO",
     "price": "349,90 €",
-    "priceHistory": [{ "price": "349,90 €", "date": "10-7-2022" }]
+    "priceHistory": [{ "price": "349,90 €", "date": "12-7-2022" }]
   },
   {
-    "id": "GVN3050GO8-00-10",
-    "name": "Placa Gráfica Gigabyte GeForce RTX 3050 Gaming OC 8G",
-    "price": "429,90 €",
-    "priceHistory": [{ "price": "429,90 €", "date": "10-7-2022" }]
-  },
-  {
-    "id": "GVN3050EO8-00-10",
-    "name": "Placa Gráfica Gigabyte GeForce RTX 3050 Eagle OC 8G",
-    "price": "399,90 €",
-    "priceHistory": [{ "price": "399,90 €", "date": "10-7-2022" }]
+    "id": "GV-​N307TAORUS M-8GD",
+    "name": "Placa Gráfica Gigabyte GeForce RTX 3070 Ti Aorus Master 8GB GDDR6X",
+    "price": "1074,90 €",
+    "priceHistory": [{ "price": "1074,90 €", "date": "12-7-2022" }]
   },
   {
     "id": "90YV0FD1-M0NM00",
     "name": "Placa Gráfica Asus TUF Gaming GeForce RTX 3090 24GB GDDR6X OC Edition",
     "price": "2019,90 €",
-    "priceHistory": [{ "price": "2019,90 €", "date": "10-7-2022" }]
+    "priceHistory": [{ "price": "2019,90 €", "date": "12-7-2022" }]
   },
   {
-    "id": "GV-N166TOC-6GD",
-    "name": "Placa Gráfica Gigabyte GeForce GTX 1660 Ti 6GB GDDR6 OC Edition",
-    "price": "494,90 €",
-    "priceHistory": [{ "price": "494,90 €", "date": "10-7-2022" }]
+    "id": "GV-N166SOC-6GD",
+    "name": "Placa Gráfica Gigabyte GeForce GTX 1660 SUPER 6GB OC",
+    "price": "459,90 €",
+    "priceHistory": [{ "price": "459,90 €", "date": "12-7-2022" }]
   },
   {
-    "id": "90YV0GY0-M0NA00",
-    "name": "Placa Gráfica Asus TUF Gaming GeForce RTX 3070 Ti 8GB GDDR6X OC Edition",
-    "price": "985,90 €",
-    "priceHistory": [{ "price": "985,90 €", "date": "10-7-2022" }]
-  },
-  {
-    "id": "90YV0FAC-M0NM00",
-    "name": "Placa Gráfica Asus ROG Strix GeForce RTX 3080 12GB GDDR6X OC Edition LHR",
-    "price": "1679,90 €",
-    "priceHistory": [{ "price": "1679,90 €", "date": "10-7-2022" }]
-  },
-  {
-    "id": "90YV0GU0-M0NM00",
-    "name": "Placa Gráfica Asus TUF Gaming GeForce RTX 3080 Ti 12GB GDDR6X",
-    "price": "1749,90 €",
-    "priceHistory": [{ "price": "1749,90 €", "date": "10-7-2022" }]
-  },
-  {
-    "id": "90YV0G1A-M0NA00",
-    "name": "Placa Gráfica Asus TUF Gaming RTX 3060 Ti V2 8GB GDDR6 OC Edition LHR",
-    "price": "679,90 €",
-    "priceHistory": [{ "price": "679,90 €", "date": "10-7-2022" }]
-  },
-  {
-    "id": "90YV0DT2-M0NA00",
-    "name": "Placa Gráfica Asus GeForce GTX 1660 SUPER TUF Gaming 6GB OC",
-    "price": "349,90 €",
-    "priceHistory": [{ "price": "349,90 €", "date": "10-7-2022" }]
-  },
-  {
-    "id": "GV-N1660OC-6GD",
-    "name": "Placa Gráfica Gigabyte GeForce GTX 1660 6GB GDDR5 OC",
-    "price": "409,90 €",
-    "priceHistory": [{ "price": "409,90 €", "date": "10-7-2022" }]
-  },
-  {
-    "id": "GV-N308TAORUS X-12GD",
-    "name": "Placa Gráfica Gigabyte GeForce RTX 3080 Ti Aorus Xtreme 12GB GDDR6X",
-    "price": "1749,90 €",
-    "priceHistory": [{ "price": "1749,90 €", "date": "10-7-2022" }]
-  },
-  {
-    "id": "90YV0CT8-M0NA00",
-    "name": "Placa Gráfica Asus GeForce GTX 1660 Ti Evo TUF Gaming 6GB GDDR6",
-    "price": "404,90 €",
-    "priceHistory": [{ "price": "404,90 €", "date": "10-7-2022" }]
-  },
-  {
-    "id": "GV-N307TVISION OC-8GD",
-    "name": "Placa Gráfica Gigabyte GeForce RTX 3070 Ti Vision 8G GDDR6X OC",
-    "price": "954,90 €",
-    "priceHistory": [{ "price": "954,90 €", "date": "10-7-2022" }]
-  },
-  {
-    "id": "90YV0HH2-M0NA00",
-    "name": "Placa Gráfica Asus GeForce RTX 3050 Phoenix 8GB GDDR6",
-    "price": "419,90 €",
-    "priceHistory": [{ "price": "419,90 €", "date": "10-7-2022" }]
-  },
-  {
-    "id": "90YV0HC1-M0NA00",
-    "name": "Placa Gráfica Asus TUF Gaming GeForce RTX 3090 Ti 24GB GDDR6X OC Edition",
-    "price": "2374,90 €",
-    "priceHistory": [{ "price": "2374,90 €", "date": "10-7-2022" }]
-  },
-  {
-    "id": "90YV0CH6-M0NA00",
-    "name": "Placa Gráfica Asus Dual GeForce RTX 2060 12GB GDDR6 EVO",
-    "price": "498,90 €",
-    "priceHistory": [{ "price": "498,90 €", "date": "10-7-2022" }]
-  },
-  {
-    "id": "VCG30708LDFMPB",
-    "name": "Placa Grafica PNY GeForce RTX 3070 8GB GDDR6 UPRISING Dual Fan LHR",
-    "price": "669,90 €",
-    "priceHistory": [{ "price": "669,90 €", "date": "10-7-2022" }]
-  },
-  {
-    "id": "C308T4-126XX-1810VA36",
-    "name": "Placa Gráfica INNO3D GeForce RTX 3080 Ti iCHILL X4 12GB GDDR6X",
-    "price": "1559,90 €",
-    "priceHistory": [{ "price": "1559,90 €", "date": "10-7-2022" }]
-  },
-  {
-    "id": "C307T4-086XX-1820VA35",
-    "name": "Placa Gráfica INNO3D GeForce RTX 3070 Ti iCHILL X4 8GB GDDR6X",
-    "price": "934,90 €",
-    "priceHistory": [{ "price": "934,90 €", "date": "10-7-2022" }]
-  },
-  {
-    "id": "06G-P4-2062-KR",
-    "name": "Placa Gráfica EVGA GeForce RTX 2060 SC Overclocked 6GB GDDR6",
-    "price": "478,90 €",
-    "priceHistory": [{ "price": "478,90 €", "date": "10-7-2022" }]
-  },
-  {
-    "id": "C308T3-126XX-1810VA37",
-    "name": "Placa Gráfica INNO3D GeForce RTX 3080 Ti iCHILL X3 12GB GDDR6X",
-    "price": "1469,90 €",
-    "priceHistory": [{ "price": "1469,90 €", "date": "10-7-2022" }]
-  },
-  {
-    "id": "C30704-08D6X-1710VA35H",
-    "name": "Placa Gráfica INNO3D GeForce RTX 3070 iCHILL X4 8GB GDDR6 LHR",
-    "price": "819,90 €",
-    "priceHistory": [{ "price": "819,90 €", "date": "10-7-2022" }]
-  },
-  {
-    "id": "N30602-12D6X-11902120H",
-    "name": "Placa Gráfica INNO3D GeForce RTX 3060 TWIN X2 12GB GDDR6 OC LHR",
-    "price": "479,90 €",
-    "priceHistory": [{ "price": "479,90 €", "date": "10-7-2022" }]
-  },
-  {
-    "id": "N166SK-06D6",
-    "name": "Placa Gráfica INNO3D GeForce GTX 1660 SUPER Twin X2 6GB GDDR6",
-    "price": "369,90 €",
-    "priceHistory": [{ "price": "369,90 €", "date": "10-7-2022" }]
-  },
-  {
-    "id": "VCG30508DFXPPB",
-    "name": "Placa Gráfica PNY GeForce RTX 3050 8GB GDDR6 XLR8 Gaming Revel EPIC-X RGB Dual Fan Edition",
-    "price": "359,90 €",
-    "priceHistory": [{ "price": "359,90 €", "date": "10-7-2022" }]
+    "id": "GVN3050GO8-00-10",
+    "name": "Placa Gráfica Gigabyte GeForce RTX 3050 Gaming OC 8G",
+    "price": "429,90 €",
+    "priceHistory": [{ "price": "429,90 €", "date": "12-7-2022" }]
   },
   {
     "id": "VCGGT7302XPB-BB",
     "name": "Placa Gráfica PNY GeForce GT 730 Low Profile 2GB DDR3",
     "price": "79,90 €",
-    "priceHistory": [{ "price": "79,90 €", "date": "10-7-2022" }]
+    "priceHistory": [{ "price": "79,90 €", "date": "12-7-2022" }]
+  },
+  {
+    "id": "GVN3050EO8-00-10",
+    "name": "Placa Gráfica Gigabyte GeForce RTX 3050 Eagle OC 8G",
+    "price": "399,90 €",
+    "priceHistory": [{ "price": "399,90 €", "date": "12-7-2022" }]
+  },
+  {
+    "id": "GV-N308TAORUS M-12GD 1.0",
+    "name": "Placa Gráfica Gigabyte Aorus GeForce RTX 3080 Ti Master 12G GDDR6X",
+    "price": "1809,90 €",
+    "priceHistory": [{ "price": "1809,90 €", "date": "12-7-2022" }]
+  },
+  {
+    "id": "GV-N166TOC-6GD",
+    "name": "Placa Gráfica Gigabyte GeForce GTX 1660 Ti 6GB GDDR6 OC Edition",
+    "price": "494,90 €",
+    "priceHistory": [{ "price": "494,90 €", "date": "12-7-2022" }]
+  },
+  {
+    "id": "90YV0GY0-M0NA00",
+    "name": "Placa Gráfica Asus TUF Gaming GeForce RTX 3070 Ti 8GB GDDR6X OC Edition",
+    "price": "985,90 €",
+    "priceHistory": [{ "price": "985,90 €", "date": "12-7-2022" }]
+  },
+  {
+    "id": "90YV0FAC-M0NM00",
+    "name": "Placa Gráfica Asus ROG Strix GeForce RTX 3080 12GB GDDR6X OC Edition LHR",
+    "price": "1679,90 €",
+    "priceHistory": [{ "price": "1679,90 €", "date": "12-7-2022" }]
+  },
+  {
+    "id": "90YV0GU0-M0NM00",
+    "name": "Placa Gráfica Asus TUF Gaming GeForce RTX 3080 Ti 12GB GDDR6X",
+    "price": "1749,90 €",
+    "priceHistory": [{ "price": "1749,90 €", "date": "12-7-2022" }]
+  },
+  {
+    "id": "90YV0DT2-M0NA00",
+    "name": "Placa Gráfica Asus GeForce GTX 1660 SUPER TUF Gaming 6GB OC",
+    "price": "349,90 €",
+    "priceHistory": [{ "price": "349,90 €", "date": "12-7-2022" }]
+  },
+  {
+    "id": "ZT-A30500F-10M",
+    "name": "Placa Gráfica Zotac Gaming GeForce RTX 3050 Amp 8GB GDDR6",
+    "price": "399,90 €",
+    "priceHistory": [{ "price": "399,90 €", "date": "12-7-2022" }]
+  },
+  {
+    "id": "GV-N1660OC-6GD",
+    "name": "Placa Gráfica Gigabyte GeForce GTX 1660 6GB GDDR5 OC",
+    "price": "409,90 €",
+    "priceHistory": [{ "price": "409,90 €", "date": "12-7-2022" }]
+  },
+  {
+    "id": "GV-N308TAORUS X-12GD",
+    "name": "Placa Gráfica Gigabyte GeForce RTX 3080 Ti Aorus Xtreme 12GB GDDR6X",
+    "price": "1749,90 €",
+    "priceHistory": [{ "price": "1749,90 €", "date": "12-7-2022" }]
+  },
+  {
+    "id": "90YV0G1A-M0NA00",
+    "name": "Placa Gráfica Asus TUF Gaming RTX 3060 Ti V2 8GB GDDR6 OC Edition LHR",
+    "price": "679,90 €",
+    "priceHistory": [{ "price": "679,90 €", "date": "12-7-2022" }]
+  },
+  {
+    "id": "90YV0CT8-M0NA00",
+    "name": "Placa Gráfica Asus GeForce GTX 1660 Ti Evo TUF Gaming 6GB GDDR6",
+    "price": "404,90 €",
+    "priceHistory": [{ "price": "404,90 €", "date": "12-7-2022" }]
+  },
+  {
+    "id": "90YV0DT0-M0NA00",
+    "name": "Placa Gráfica Asus GeForce GTX 1660 SUPER Phoenix 6GB OC",
+    "price": "349,90 €",
+    "priceHistory": [{ "price": "349,90 €", "date": "12-7-2022" }]
+  },
+  {
+    "id": "90YV0HH2-M0NA00",
+    "name": "Placa Gráfica Asus GeForce RTX 3050 Phoenix 8GB GDDR6",
+    "price": "419,90 €",
+    "priceHistory": [{ "price": "419,90 €", "date": "12-7-2022" }]
+  },
+  {
+    "id": "GV-N307TVISION OC-8GD",
+    "name": "Placa Gráfica Gigabyte GeForce RTX 3070 Ti Vision 8G GDDR6X OC",
+    "price": "954,90 €",
+    "priceHistory": [{ "price": "954,90 €", "date": "12-7-2022" }]
+  },
+  {
+    "id": "90YV0HC1-M0NA00",
+    "name": "Placa Gráfica Asus TUF Gaming GeForce RTX 3090 Ti 24GB GDDR6X OC Edition",
+    "price": "2374,90 €",
+    "priceHistory": [{ "price": "2374,90 €", "date": "12-7-2022" }]
+  },
+  {
+    "id": "90YV0CH6-M0NA00",
+    "name": "Placa Gráfica Asus Dual GeForce RTX 2060 12GB GDDR6 EVO",
+    "price": "498,90 €",
+    "priceHistory": [{ "price": "498,90 €", "date": "12-7-2022" }]
+  },
+  {
+    "id": "VCG30708LDFMPB",
+    "name": "Placa Grafica PNY GeForce RTX 3070 8GB GDDR6 UPRISING Dual Fan LHR",
+    "price": "669,90 €",
+    "priceHistory": [{ "price": "669,90 €", "date": "12-7-2022" }]
+  },
+  {
+    "id": "C307T4-086XX-1820VA35",
+    "name": "Placa Gráfica INNO3D GeForce RTX 3070 Ti iCHILL X4 8GB GDDR6X",
+    "price": "934,90 €",
+    "priceHistory": [{ "price": "934,90 €", "date": "12-7-2022" }]
+  },
+  {
+    "id": "C308T4-126XX-1810VA36",
+    "name": "Placa Gráfica INNO3D GeForce RTX 3080 Ti iCHILL X4 12GB GDDR6X",
+    "price": "1559,90 €",
+    "priceHistory": [{ "price": "1559,90 €", "date": "12-7-2022" }]
+  },
+  {
+    "id": "06G-P4-2062-KR",
+    "name": "Placa Gráfica EVGA GeForce RTX 2060 SC Overclocked 6GB GDDR6",
+    "price": "478,90 €",
+    "priceHistory": [{ "price": "478,90 €", "date": "12-7-2022" }]
+  },
+  {
+    "id": "VCG7302D3SFPPB",
+    "name": "Placa Gráfica PNY GeForce GT 730 Single Fan Low Profile 2GB DDR3",
+    "price": "75,90 €",
+    "priceHistory": [{ "price": "75,90 €", "date": "12-7-2022" }]
+  },
+  {
+    "id": "VCG30508DFXPPB",
+    "name": "Placa Gráfica PNY GeForce RTX 3050 8GB GDDR6 XLR8 Gaming Revel EPIC-X RGB Dual Fan Edition",
+    "price": "359,90 €",
+    "priceHistory": [{ "price": "359,90 €", "date": "12-7-2022" }]
+  },
+  {
+    "id": "12G-P5-3967-KR",
+    "name": "Placa Gráfica EVGA GeForce RTX 3080 Ti FTW3 Ultra Gaming 12GB GDDR6X",
+    "price": "1687,90 €",
+    "priceHistory": [{ "price": "1687,90 €", "date": "12-7-2022" }]
+  },
+  {
+    "id": "C308T3-126XX-1810VA37",
+    "name": "Placa Gráfica INNO3D GeForce RTX 3080 Ti iCHILL X3 12GB GDDR6X",
+    "price": "1469,90 €",
+    "priceHistory": [{ "price": "1469,90 €", "date": "12-7-2022" }]
+  },
+  {
+    "id": "C30704-08D6X-1710VA35H",
+    "name": "Placa Gráfica INNO3D GeForce RTX 3070 iCHILL X4 8GB GDDR6 LHR",
+    "price": "819,90 €",
+    "priceHistory": [{ "price": "819,90 €", "date": "12-7-2022" }]
+  },
+  {
+    "id": "N30602-12D6X-11902120H",
+    "name": "Placa Gráfica INNO3D GeForce RTX 3060 TWIN X2 12GB GDDR6 OC LHR",
+    "price": "479,90 €",
+    "priceHistory": [{ "price": "479,90 €", "date": "12-7-2022" }]
+  },
+  {
+    "id": "N166SK-06D6",
+    "name": "Placa Gráfica INNO3D GeForce GTX 1660 SUPER Twin X2 6GB GDDR6",
+    "price": "369,90 €",
+    "priceHistory": [{ "price": "369,90 €", "date": "12-7-2022" }]
   },
   {
     "id": "N309T3-246XX-1890VA46",
     "name": "Placa Gráfica INNO3D GeForce RTX 3090 Ti X3 24GB GDDR6X",
     "price": "2229,90 €",
-    "priceHistory": [{ "price": "2229,90 €", "date": "10-7-2022" }]
+    "priceHistory": [{ "price": "2229,90 €", "date": "12-7-2022" }]
   },
   {
     "id": "N30803-106X-1810VA44H",
     "name": "Placa Gráfica Inno3D GeForce RTX 3080 X3 10GB GDDR6X LHR",
     "price": "919,90 €",
-    "priceHistory": [{ "price": "919,90 €", "date": "10-7-2022" }]
+    "priceHistory": [{ "price": "919,90 €", "date": "12-7-2022" }]
   },
   {
     "id": "N30502-08D6X-11902120",
     "name": "Placa Gráfica INNO3D GeForce RTX 3050 Gaming OC X2 8GB GDDR6",
     "price": "381,90 €",
-    "priceHistory": [{ "price": "381,90 €", "date": "10-7-2022" }]
+    "priceHistory": [{ "price": "381,90 €", "date": "12-7-2022" }]
   },
   {
     "id": "912-V397-039",
     "name": "Placa Gráfica MSI GeForce RTX 3060 Ventus 2X 12G OC",
     "price": "409,90 €",
-    "priceHistory": [{ "price": "409,90 €", "date": "10-7-2022" }]
+    "priceHistory": [{ "price": "409,90 €", "date": "12-7-2022" }]
+  },
+  {
+    "id": "ZT-A30600E-10M",
+    "name": "Placa Gráfica Zotac Gaming GeForce RTX 3060 12GB GDDR6 Twin Edge",
+    "price": "429,90 €",
+    "priceHistory": [{ "price": "429,90 €", "date": "12-7-2022" }]
   },
   {
     "id": "912-V505-013",
     "name": "Placa Gráfica MSI GeForce RTX 3070 Ti Ventus 3X 8G OC",
     "price": "769,90 €",
-    "priceHistory": [{ "price": "769,90 €", "date": "10-7-2022" }]
+    "priceHistory": [{ "price": "769,90 €", "date": "12-7-2022" }]
   },
   {
     "id": "90YV0GU1-M0NM00",
     "name": "Placa Gráfica Asus TUF Gaming GeForce RTX 3080 Ti 12GB GDDR6X OC",
     "price": "1685,90 €",
-    "priceHistory": [{ "price": "1685,90 €", "date": "10-7-2022" }]
+    "priceHistory": [{ "price": "1685,90 €", "date": "12-7-2022" }]
   },
   {
     "id": "912-V397-249",
     "name": "Placa Gráfica MSI GeForce RTX 3060 Ti Ventus 2X 8G OCV1 LHR",
     "price": "519,90 €",
-    "priceHistory": [{ "price": "519,90 €", "date": "10-7-2022" }]
+    "priceHistory": [{ "price": "519,90 €", "date": "12-7-2022" }]
   },
   {
     "id": "GV-N306TAORUS E-8GD (REV. 2.0)",
     "name": "Placa Gráfica Gigabyte Aorus GeForce RTX 3060 Ti Elite 8GB GDDR6 (rev. 2.0) LHR",
     "price": "779,90 €",
-    "priceHistory": [{ "price": "779,90 €", "date": "10-7-2022" }]
-  },
-  {
-    "id": "912-V809-4047",
-    "name": "Placa Gráfica MSI GeForce RTX 3050 Aero ITX 8G",
-    "price": "299,90 €",
-    "priceHistory": [{ "price": "299,90 €", "date": "10-7-2022" }]
+    "priceHistory": [{ "price": "779,90 €", "date": "12-7-2022" }]
   },
   {
     "id": "90YV0GC0-M0NA10",
     "name": "Placa Gráfica Asus TUF Gaming GeForce RTX 3060 V2 12GB GDDR6 OC",
     "price": "548,90 €",
-    "priceHistory": [{ "price": "548,90 €", "date": "10-7-2022" }]
-  },
-  {
-    "id": "ZT-A30600H-10M",
-    "name": "Placa Gráfica Zotac Gaming GeForce RTX 3060 12GB GDDR6 Twin Edge OC",
-    "price": "446,90 €",
-    "priceHistory": [{ "price": "446,90 €", "date": "10-7-2022" }]
+    "priceHistory": [{ "price": "548,90 €", "date": "12-7-2022" }]
   },
   {
     "id": "V390-290R",
     "name": "Placa Gráfica MSI GeForce RTX 3060 Ti Gaming Z Trio 8G LHR",
     "price": "649,90 €",
-    "priceHistory": [{ "price": "649,90 €", "date": "10-7-2022" }]
+    "priceHistory": [{ "price": "649,90 €", "date": "12-7-2022" }]
+  },
+  {
+    "id": "912-V397-019",
+    "name": "Placa Gráfica MSI GeForce RTX 3060 Gaming X 12G",
+    "price": "507,90 €",
+    "priceHistory": [{ "price": "507,90 €", "date": "12-7-2022" }]
+  },
+  {
+    "id": "912-V809-4047",
+    "name": "Placa Gráfica MSI GeForce RTX 3050 Aero ITX 8G",
+    "price": "299,90 €",
+    "priceHistory": [{ "price": "299,90 €", "date": "12-7-2022" }]
   },
   {
     "id": "ZT-A30700H-10PLHR",
     "name": "Placa Gráfica Zotac Gaming GeForce RTX 3070 8GB GDDR6 Twin Edge OC LHR",
     "price": "609,90 €",
-    "priceHistory": [{ "price": "609,90 €", "date": "10-7-2022" }]
+    "priceHistory": [{ "price": "609,90 €", "date": "12-7-2022" }]
+  },
+  {
+    "id": "ZT-A30600H-10M",
+    "name": "Placa Gráfica Zotac Gaming GeForce RTX 3060 12GB GDDR6 Twin Edge OC",
+    "price": "446,90 €",
+    "priceHistory": [{ "price": "446,90 €", "date": "12-7-2022" }]
   },
   {
     "id": "GV-N3080GAMING OC-10GD (REV. 2.0)",
     "name": "Placa Gráfica Gigabyte GeForce RTX 3080 Gaming 10GB GDDR6X OC Edition (rev. 2.0) LHR",
     "price": "899,90 €",
-    "priceHistory": [{ "price": "899,90 €", "date": "10-7-2022" }]
+    "priceHistory": [{ "price": "899,90 €", "date": "12-7-2022" }]
   },
   {
     "id": "GV-N306TGAMINGOC PRO-8GD 3.0",
     "name": "Placa Gráfica Gigabyte GeForce RTX 3060 Ti Gaming OC Pro 8GB GDDR6 (rev. 3.0)",
     "price": "695,90 €",
-    "priceHistory": [{ "price": "695,90 €", "date": "10-7-2022" }]
-  },
-  {
-    "id": "N30903-246X-1880VA44",
-    "name": "Placa Gráfica INNO3D GeForce RTX 3090 X3 24GB GDDR6X",
-    "price": "2169,00 €",
-    "priceHistory": [{ "price": "2169,00 €", "date": "10-7-2022" }]
+    "priceHistory": [{ "price": "695,90 €", "date": "12-7-2022" }]
   },
   {
     "id": "900-5G190-2200-000",
     "name": "Placa Gráfica NVIDIA RTX A4000 16GB GDDR6",
     "price": "1059,90 €",
-    "priceHistory": [{ "price": "1059,90 €", "date": "10-7-2022" }]
+    "priceHistory": [{ "price": "1059,90 €", "date": "12-7-2022" }]
+  },
+  {
+    "id": "N30903-246X-1880VA44",
+    "name": "Placa Gráfica INNO3D GeForce RTX 3090 X3 24GB GDDR6X",
+    "price": "2169,00 €",
+    "priceHistory": [{ "price": "2169,00 €", "date": "12-7-2022" }]
   },
   {
     "id": "900-5G172-2570-000",
     "name": "Placa Gráfica Nvidia Quadro T1000 8GB GDDR6",
-    "price": "398,90 €",
-    "priceHistory": []
+    "price": "399,90 €",
+    "priceHistory": [
+      { "price": "399,90 €", "date": "12-7-2022" },
+      { "price": "399,90 €", "date": "12-7-2022" }
+    ]
   }
 ]

@@ -105,7 +105,7 @@ routes.get("/api", (req, res) => {
 
     if (!fs.existsSync("sample.json")) {
       let data = JSON.stringify(test);
-      console.log(data);
+      //console.log(data);
       fs.writeFile("sample.json", data, function (err) {
         if (err) throw err;
         console.log("File is created successfully.");
@@ -116,12 +116,21 @@ routes.get("/api", (req, res) => {
       for (let i2 = 0; test.length > i2; i2++) {
         if (userExists(test[i2].id) == true) {
           console.log("existe");
-          if (priceSame(test[i2].price,test[i2].id) == true) {
-            console.log("Preço igual "+ test[i2].price);
-          }else{
-            console.log("Preço diferentes")
+          if (priceSame(test[i2].price, test[i2].id) == true) {
+            console.log("Preço igual " + test[i2].price);
+          } else {
+            console.log("Preço diferentes " + test[i2].price);
             //Mudar agora no ficheiro JSON
-            fileData[i2].price = test[i2].price
+            fileData[i2].price = test[i2].price;
+
+            let price = {
+              price: test[i2].price,
+              date: date,
+            };
+            fileData[i2].priceHistory.push(price)
+            
+            console.log(fileData[i2].price)
+            fs.writeFileSync("sample.json", JSON.stringify(fileData));
           }
         } else {
           console.log("não existe");
@@ -132,6 +141,13 @@ routes.get("/api", (req, res) => {
             price: test[i2].price,
             priceHistory: [],
           };
+          let price = {
+            price: test[i2].price,
+            date: date,
+          };
+
+          arr.priceHistory.push(price)
+
           fileData.push(arr);
           fs.writeFileSync("sample.json", JSON.stringify(fileData));
         }
@@ -147,10 +163,10 @@ routes.get("/api", (req, res) => {
       });
     }
 
-    function priceSame(price,id) {
+    function priceSame(price, id) {
       const fileData = JSON.parse(fs.readFileSync("sample.json"));
       return fileData.some(function (el) {
-        console.log(el.price+" equals "+price)
+        //console.log(el.price+" equals "+price)
         return el.price === price && el.id === id;
       });
     }
