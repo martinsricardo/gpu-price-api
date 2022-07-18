@@ -33,43 +33,56 @@ routes.get("/api", (req, res) => {
 
       //GPU NAME
       await page
-        .waitForXPath(
-          "//*[@id='__next']/div[2]/div/main/div/div/div/div/div/div/div/a"
+        .$(
+          "#__next > div.z-1.flex.flex-col.justify-between.min-h-screen > div.z-1.base-container.py-5.bg-background.pb-28.flex-grow > main > div > div.grid.content-start.lg\\:grid-flow-col.lg\\:grid-cols-catalog.xl\\:grid-cols-catalog-md.\\32 xl\\:grid-cols-catalog-lg.gap-2.md\\:gap-4 > div:nth-child(2) > div:nth-child(2) > div > div > div > a"
         )
-        .then(() => console.log("got it"));
-      let element = await page.$x(
-        "//*[@id='__next']/div[2]/div/main/div/div/div/div/div/div/div/a"
+        .then(() => console.log("Gpu name -> check"));
+
+      const services = await page.evaluate(() =>
+        Array.from(
+          document.querySelectorAll(
+            "#__next > div.z-1.flex.flex-col.justify-between.min-h-screen > div.z-1.base-container.py-5.bg-background.pb-28.flex-grow > main > div > div.grid.content-start.lg\\:grid-flow-col.lg\\:grid-cols-catalog.xl\\:grid-cols-catalog-md.\\32 xl\\:grid-cols-catalog-lg.gap-2.md\\:gap-4 > div:nth-child(2) > div:nth-child(2) > div > div > div > a"
+          ),
+          (element) => element.textContent
+        )
       );
-      let gpuName = await page.evaluate((...element) => {
-        return element.map((e) => e.textContent);
-      }, ...element);
+      console.log(services);
 
       //GPU ID
+      // #__next > div.z-1.flex.flex-col.justify-between.min-h-screen > div.z-1.base-container.py-5.bg-background.pb-28.flex-grow > main > div > div.grid.content-start.lg\:grid-flow-col.lg\:grid-cols-catalog.xl\:grid-cols-catalog-md.\32 xl\:grid-cols-catalog-lg.gap-2.md\:gap-4 > div:nth-child(2) > div:nth-child(2) > div > div > div > div.mt-2.mb-1\.5.h-4.lg\:h-4.text-xxs.md\:text-xs
       await page
-        .waitForXPath(
-          "//*[@id='__next']/div[2]/div[1]/main/div/div[5]/div[2]/div[2]/div/div/div/div[3]"
+        .$(
+          "#__next > div.z-1.flex.flex-col.justify-between.min-h-screen > div.z-1.base-container.py-5.bg-background.pb-28.flex-grow > main > div > div.grid.content-start.lg\\:grid-flow-col.lg\\:grid-cols-catalog.xl\\:grid-cols-catalog-md.\\32 xl\\:grid-cols-catalog-lg.gap-2.md\\:gap-4 > div:nth-child(2) > div:nth-child(2) > div > div > div > div.mt-2.mb-1\\.5.h-4.lg\\:h-4.text-xxs.md\\:text-xs"
         )
-        .then(() => console.log("got it"));
-      let gpuIdxPath = await page.$x(
-        "//*[@id='__next']/div[2]/div[1]/main/div/div[5]/div[2]/div[2]/div/div/div/div[3]"
+        .then(() => console.log("gpu Id -> check"));
+
+      const gpuId = await page.evaluate(() =>
+        Array.from(
+          document.querySelectorAll(
+            "#__next > div.z-1.flex.flex-col.justify-between.min-h-screen > div.z-1.base-container.py-5.bg-background.pb-28.flex-grow > main > div > div.grid.content-start.lg\\:grid-flow-col.lg\\:grid-cols-catalog.xl\\:grid-cols-catalog-md.\\32 xl\\:grid-cols-catalog-lg.gap-2.md\\:gap-4 > div:nth-child(2) > div:nth-child(2) > div > div > div > div.mt-2.mb-1\\.5.h-4.lg\\:h-4.text-xxs.md\\:text-xs"
+          ),
+          (element) => element.textContent
+        )
       );
-      let gpuId = await page.evaluate((...gpuIdxPath) => {
-        return gpuIdxPath.map((e) => e.textContent);
-      }, ...gpuIdxPath);
+      console.log(gpuId);
 
       //GPU PRICE
+      // #__next > div.z-1.flex.flex-col.justify-between.min-h-screen > div.z-1.base-container.py-5.bg-background.pb-28.flex-grow > main > div > div.grid.content-start.lg\:grid-flow-col.lg\:grid-cols-catalog.xl\:grid-cols-catalog-md.\32 xl\:grid-cols-catalog-lg.gap-2.md\:gap-4 > div:nth-child(2) > div:nth-child(2) > div > div > div> div.mt-2.flex.justify-between.flex-wrap.items-center.gap-x-2 > div > div.font-extrabold.text-lg.md\:text-2xl.text-primary
       await page
-        .waitForXPath(
-          "//*[@id='__next']/div[2]/div[1]/main/div/div[5]/div[2]/div[2]/div/div/div/div[5]/div/div[1]"
+        .$(
+          "#__next > div.z-1.flex.flex-col.justify-between.min-h-screen > div.z-1.base-container.py-5.bg-background.pb-28.flex-grow > main > div > div.grid.content-start.lg\\:grid-flow-col.lg\\:grid-cols-catalog.xl\\:grid-cols-catalog-md.\\32 xl\\:grid-cols-catalog-lg.gap-2.md\\:gap-4 > div:nth-child(2) > div:nth-child(2) > div > div > div> div.mt-2.flex.justify-between.flex-wrap.items-center.gap-x-2 > div > div.font-extrabold.text-lg.md\\:text-2xl.text-primary"
         )
         .then(() => console.log("got it Price"));
-      let gpuPriceXpath = await page.$x(
-        "//*[@id='__next']/div[2]/div[1]/main/div/div[5]/div[2]/div[2]/div/div/div/div[5]/div/div[1]"
-      );
 
-      let gpuPrice = await page.evaluate((...gpuPriceXpath) => {
-        return gpuPriceXpath.map((e) => e.textContent);
-      }, ...gpuPriceXpath);
+        const gpuPrice = await page.evaluate(() =>
+        Array.from(
+          document.querySelectorAll(
+            "#__next > div.z-1.flex.flex-col.justify-between.min-h-screen > div.z-1.base-container.py-5.bg-background.pb-28.flex-grow > main > div > div.grid.content-start.lg\\:grid-flow-col.lg\\:grid-cols-catalog.xl\\:grid-cols-catalog-md.\\32 xl\\:grid-cols-catalog-lg.gap-2.md\\:gap-4 > div:nth-child(2) > div:nth-child(2) > div > div > div> div.mt-2.flex.justify-between.flex-wrap.items-center.gap-x-2 > div > div.font-extrabold.text-lg.md\\:text-2xl.text-primary"
+          ),
+          (element) => element.textContent
+        )
+      );
+      console.log(gpuPrice);
 
       for (let i2 = 0; element.length > i2; i2++) {
         let arr = {
@@ -127,9 +140,9 @@ routes.get("/api", (req, res) => {
               price: test[i2].price,
               date: date,
             };
-            fileData[i2].priceHistory.push(price)
-            
-            console.log(fileData[i2].price)
+            fileData[i2].priceHistory.push(price);
+
+            console.log(fileData[i2].price);
             fs.writeFileSync("sample.json", JSON.stringify(fileData));
           }
         } else {
@@ -146,7 +159,7 @@ routes.get("/api", (req, res) => {
             date: date,
           };
 
-          arr.priceHistory.push(price)
+          arr.priceHistory.push(price);
 
           fileData.push(arr);
           fs.writeFileSync("sample.json", JSON.stringify(fileData));
