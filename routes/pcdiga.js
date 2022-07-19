@@ -33,12 +33,12 @@ routes.get("/api", (req, res) => {
 
       //GPU NAME
       await page
-        .$(
+        .waitForSelector(
           "#__next > div.z-1.flex.flex-col.justify-between.min-h-screen > div.z-1.base-container.py-5.bg-background.pb-28.flex-grow > main > div > div.grid.content-start.lg\\:grid-flow-col.lg\\:grid-cols-catalog.xl\\:grid-cols-catalog-md.\\32 xl\\:grid-cols-catalog-lg.gap-2.md\\:gap-4 > div:nth-child(2) > div:nth-child(2) > div > div > div > a"
         )
         .then(() => console.log("Gpu name -> check"));
 
-      const services = await page.evaluate(() =>
+      const gpuName = await page.evaluate(() =>
         Array.from(
           document.querySelectorAll(
             "#__next > div.z-1.flex.flex-col.justify-between.min-h-screen > div.z-1.base-container.py-5.bg-background.pb-28.flex-grow > main > div > div.grid.content-start.lg\\:grid-flow-col.lg\\:grid-cols-catalog.xl\\:grid-cols-catalog-md.\\32 xl\\:grid-cols-catalog-lg.gap-2.md\\:gap-4 > div:nth-child(2) > div:nth-child(2) > div > div > div > a"
@@ -46,12 +46,12 @@ routes.get("/api", (req, res) => {
           (element) => element.textContent
         )
       );
-      console.log(services);
+      console.log(gpuName);
 
       //GPU ID
       // #__next > div.z-1.flex.flex-col.justify-between.min-h-screen > div.z-1.base-container.py-5.bg-background.pb-28.flex-grow > main > div > div.grid.content-start.lg\:grid-flow-col.lg\:grid-cols-catalog.xl\:grid-cols-catalog-md.\32 xl\:grid-cols-catalog-lg.gap-2.md\:gap-4 > div:nth-child(2) > div:nth-child(2) > div > div > div > div.mt-2.mb-1\.5.h-4.lg\:h-4.text-xxs.md\:text-xs
       await page
-        .$(
+        .waitForSelector(
           "#__next > div.z-1.flex.flex-col.justify-between.min-h-screen > div.z-1.base-container.py-5.bg-background.pb-28.flex-grow > main > div > div.grid.content-start.lg\\:grid-flow-col.lg\\:grid-cols-catalog.xl\\:grid-cols-catalog-md.\\32 xl\\:grid-cols-catalog-lg.gap-2.md\\:gap-4 > div:nth-child(2) > div:nth-child(2) > div > div > div > div.mt-2.mb-1\\.5.h-4.lg\\:h-4.text-xxs.md\\:text-xs"
         )
         .then(() => console.log("gpu Id -> check"));
@@ -69,7 +69,7 @@ routes.get("/api", (req, res) => {
       //GPU PRICE
       // #__next > div.z-1.flex.flex-col.justify-between.min-h-screen > div.z-1.base-container.py-5.bg-background.pb-28.flex-grow > main > div > div.grid.content-start.lg\:grid-flow-col.lg\:grid-cols-catalog.xl\:grid-cols-catalog-md.\32 xl\:grid-cols-catalog-lg.gap-2.md\:gap-4 > div:nth-child(2) > div:nth-child(2) > div > div > div> div.mt-2.flex.justify-between.flex-wrap.items-center.gap-x-2 > div > div.font-extrabold.text-lg.md\:text-2xl.text-primary
       await page
-        .$(
+        .waitForSelector(
           "#__next > div.z-1.flex.flex-col.justify-between.min-h-screen > div.z-1.base-container.py-5.bg-background.pb-28.flex-grow > main > div > div.grid.content-start.lg\\:grid-flow-col.lg\\:grid-cols-catalog.xl\\:grid-cols-catalog-md.\\32 xl\\:grid-cols-catalog-lg.gap-2.md\\:gap-4 > div:nth-child(2) > div:nth-child(2) > div > div > div> div.mt-2.flex.justify-between.flex-wrap.items-center.gap-x-2 > div > div.font-extrabold.text-lg.md\\:text-2xl.text-primary"
         )
         .then(() => console.log("got it Price"));
@@ -84,7 +84,7 @@ routes.get("/api", (req, res) => {
       );
       console.log(gpuPrice);
 
-      for (let i2 = 0; element.length > i2; i2++) {
+      for (let i2 = 0; gpuName.length > i2; i2++) {
         let arr = {
           id: gpuId[i2],
           name: gpuName[i2],
@@ -114,39 +114,40 @@ routes.get("/api", (req, res) => {
       arr2.push(price);
     }
     await browser.close();
+   
+    
     //----------------------------------------------------------
 
-    if (!fs.existsSync("sample.json")) {
+    if (!fs.existsSync("sample.json")) { //Se o ficheiro não existir cria um ficheiro novo e insere o array de produtos nesse ficheiro novo
       let data = JSON.stringify(test);
-      //console.log(data);
       fs.writeFile("sample.json", data, function (err) {
         if (err) throw err;
         console.log("File is created successfully.");
       });
-    } else {
-      const fileData = JSON.parse(fs.readFileSync("sample.json"));
+    } else { //Se o ficheiro existir
+      const fileData = JSON.parse(fs.readFileSync("sample.json")); //transforma o sample.json em um array em vez de string
 
-      for (let i2 = 0; test.length > i2; i2++) {
-        if (userExists(test[i2].id) == true) {
+      for (let i2 = 0; test.length > i2; i2++) { //Para cada objeto do array test
+        if (userExists(test[i2].id) == true) { //Se a o produto já existir
           console.log("existe");
-          if (priceSame(test[i2].price, test[i2].id) == true) {
-            console.log("Preço igual " + test[i2].price);
-          } else {
-            console.log("Preço diferentes " + test[i2].price);
-            //Mudar agora no ficheiro JSON
-            fileData[i2].price = test[i2].price;
+          if (priceSame(test[i2].price, test[i2].id) == true) { //verifica se o preço é mesmo
+            console.log("Preço igual " + test[i2].price);   //se for retorna true
+          } else {                                           //Em caso de preço diferente
+            console.log("Preço diferentes " + test[i2].price); //Se o preço for diferente insere preço no historico
+            fileData[i2].price = test[i2].price; //Muda o campo currentPrice para o preço novo
 
             let price = {
               price: test[i2].price,
               date: date,
             };
-            fileData[i2].priceHistory.push(price);
+
+            fileData[i2].priceHistory.push(price);  //insere o preço novo no historico
 
             console.log(fileData[i2].price);
-            fs.writeFileSync("sample.json", JSON.stringify(fileData));
+            fs.writeFileSync("sample.json", JSON.stringify(fileData)); 
           }
-        } else {
-          console.log("não existe");
+        } else {  //Insere o novo produto no sample.json
+          console.log("Produto não existe");
 
           let arr = {
             id: test[i2].id,
@@ -169,7 +170,7 @@ routes.get("/api", (req, res) => {
       console.log(fileData.length);
     }
 
-    function userExists(username) {
+    function userExists(username) { // Verifica se já existe um produto com este id part
       const fileData = JSON.parse(fs.readFileSync("sample.json"));
       return fileData.some(function (el) {
         return el.id === username;
@@ -183,8 +184,8 @@ routes.get("/api", (req, res) => {
         return el.price === price && el.id === id;
       });
     }
-
     return res.json(test);
+   
   })();
 });
 
