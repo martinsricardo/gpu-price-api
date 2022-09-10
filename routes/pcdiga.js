@@ -131,7 +131,7 @@ routes.get("/api", (req, res) => {
         if (userExists(test[i2].id) == true) { //Se a o produto já existir
           console.log("existe");
           if (priceSame(test[i2].price, test[i2].id) == true) { //verifica se o preço é mesmo
-            console.log("Preço igual " + test[i2].price);   //se for retorna true
+            console.log("Preço igual " + test[i2].price + " - " + test[i2].name);      //se for retorna true
           } else {                                           //Em caso de preço diferente
             console.log("Preço diferentes " + test[i2].price); //Se o preço for diferente insere preço no historico
             fileData[i2].price = test[i2].price; //Muda o campo currentPrice para o preço novo
