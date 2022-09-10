@@ -66,7 +66,16 @@ routes.get("/api", (req, res) => {
       );
       console.log(gpuId);
 
+      //GPU Stock
+      const gpuStock = "#__next > div.z-1.flex.flex-col.justify-between.min-h-screen > div.z-1.base-container.py-5.bg-background.pb-28.flex-grow > main > div > div.grid.content-start.lg\:grid-flow-col.lg\:grid-cols-catalog.xl\:grid-cols-catalog-md.\32 xl\:grid-cols-catalog-lg.gap-2.md\:gap-4 > div:nth-child(2) > div:nth-child(2) > div > div > div:nth-child(1) > div:nth-child(5) > div"
+   //identify element
+   const f = await page.$("#__next > div.z-1.flex.flex-col.justify-between.min-h-screen > div.z-1.base-container.py-5.bg-background.pb-28.flex-grow > main > div > div.grid.content-start.lg\\:grid-flow-col.lg\\:grid-cols-catalog.xl\\:grid-cols-catalog-md.\\32 xl\\:grid-cols-catalog-lg.gap-2.md\\:gap-4 > div:nth-child(2) > div:nth-child(2) > div > div > div:nth-child(1) > div:nth-child(5) > div")
+   //obtain text
+   const text = await (await f.getProperty('className')).jsonValue()
+   console.log("Text is: " + text)
+
       //GPU PRICE
+      //"#__next > div.z-1.flex.flex-col.justify-between.min-h-screen > div.z-1.base-container.py-5.bg-background.pb-28.flex-grow > main > div > div.grid.content-start.lg\\:grid-flow-col.lg\\:grid-cols-catalog.xl\\:grid-cols-catalog-md.\\32 xl\\:grid-cols-catalog-lg.gap-2.md\\:gap-4 > div:nth-child(2) > div:nth-child(2) > div.grid.justify-between.gap-x-2.gap-y-4.grid-cols-2.sm\\:grid-cols-3.lg\\:grid-cols-prod-list.\\32 xl\\:grid-cols-prod-list-lg > div > div.mt-2.flex.justify-between.flex-wrap.items-center.gap-x-2 > div > div"
       // #__next > div.z-1.flex.flex-col.justify-between.min-h-screen > div.z-1.base-container.py-5.bg-background.pb-28.flex-grow > main > div > div.grid.content-start.lg\:grid-flow-col.lg\:grid-cols-catalog.xl\:grid-cols-catalog-md.\32 xl\:grid-cols-catalog-lg.gap-2.md\:gap-4 > div:nth-child(2) > div:nth-child(2) > div > div > div> div.mt-2.flex.justify-between.flex-wrap.items-center.gap-x-2 > div > div.font-extrabold.text-lg.md\:text-2xl.text-primary
       await page
         .waitForSelector(
@@ -79,7 +88,7 @@ routes.get("/api", (req, res) => {
           document.querySelectorAll(
             "#__next > div.z-1.flex.flex-col.justify-between.min-h-screen > div.z-1.base-container.py-5.bg-background.pb-28.flex-grow > main > div > div.grid.content-start.lg\\:grid-flow-col.lg\\:grid-cols-catalog.xl\\:grid-cols-catalog-md.\\32 xl\\:grid-cols-catalog-lg.gap-2.md\\:gap-4 > div:nth-child(2) > div:nth-child(2) > div > div > div> div.mt-2.flex.justify-between.flex-wrap.items-center.gap-x-2 > div > div.font-extrabold.text-lg.md\\:text-2xl.text-primary"
           ),
-          (element) => element.textContent
+          (element) => element.textContent.slice(0, -2)
         )
       );
       console.log(gpuPrice);
@@ -133,7 +142,8 @@ routes.get("/api", (req, res) => {
           if (priceSame(test[i2].price, test[i2].id) == true) { //verifica se o preço é mesmo
             console.log("Preço igual " + test[i2].price + " - " + test[i2].name);      //se for retorna true
           } else {                                           //Em caso de preço diferente
-            console.log("Preço diferentes " + test[i2].price); //Se o preço for diferente insere preço no historico
+            console.log("Preço diferentes " + test[i2].price + " - " + test[i2].name); //Se o preço for diferente insere preço no historico
+            //console.log(fileData)
             fileData[i2].price = test[i2].price; //Muda o campo currentPrice para o preço novo
 
             let price = {
@@ -184,6 +194,7 @@ routes.get("/api", (req, res) => {
         return el.price === price && el.id === id;
       });
     }
+    await browser.close();
     return res.json(test);
    
   })();
