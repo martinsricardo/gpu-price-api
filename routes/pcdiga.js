@@ -68,6 +68,76 @@ routes.get("/api", (req, res) => {
       //test.push(result);
       //console.log(result);
     }
+
+
+    if (!fs.existsSync("sample.json")) { //Se o ficheiro não existir cria um ficheiro novo e insere o array de produtos nesse ficheiro novo
+      let data = JSON.stringify(test);
+      fs.writeFile("sample.json", data, function (err) {
+        if (err) throw err;
+        console.log("File is created successfully");
+      });
+    } else { //Se o ficheiro existir
+      const fileData = JSON.parse(fs.readFileSync("sample.json")); //transforma o sample.json em um array em vez de string
+
+      for (let i2 = 0; test.length > i2; i2++) { //Para cada objeto do array test
+        if (userExists(test[i2].id) == true) { //Se a o produto já existir
+          console.log("existe");
+          if (priceSame(test[i2].price, test[i2].id) == true) { //verifica se o preço é mesmo
+            console.log("Preço igual " + test[i2].price + " - " + test[i2].name);      //se for retorna true
+          } else {                                           //Em caso de preço diferente
+            console.log("Preço diferentes " + test[i2].price + " - " + test[i2].name); //Se o preço for diferente insere preço no historico
+            //console.log(fileData)
+            fileData[i2].price = test[i2].price; //Muda o campo currentPrice para o preço novo
+
+            let price = {
+              price: test[i2].price,
+              date: date,
+            };
+
+            fileData[i2].priceHistory.push(price);  //insere o preço novo no historico
+
+            console.log(fileData[i2].price);
+            fs.writeFileSync("sample.json", JSON.stringify(fileData)); 
+          }
+        } else {  //Insere o novo produto no sample.json
+          console.log("Produto não existe");
+
+          let arr = {
+            id: test[i2].id,
+            name: test[i2].name,
+            price: test[i2].price,
+            priceHistory: [],
+          };
+          let price = {
+            price: test[i2].price,
+            date: date,
+          };
+
+          arr.priceHistory.push(price);
+
+          fileData.push(arr);
+          fs.writeFileSync("sample.json", JSON.stringify(fileData));
+        }
+      }
+      console.log(test.length);
+      console.log(fileData.length);
+    }
+
+    function userExists(username) { // Verifica se já existe um produto com este id part
+      const fileData = JSON.parse(fs.readFileSync("sample.json"));
+      return fileData.some(function (el) {
+        return el.id === username;
+      });
+    }
+
+    function priceSame(price, id) {
+      const fileData = JSON.parse(fs.readFileSync("sample.json"));
+      return fileData.some(function (el) {
+        //console.log(el.price+" equals "+price)
+        return el.price === price && el.id === id;
+      });
+    }
+
     console.log(test);
     await browser.close();
     return res.json(test);
