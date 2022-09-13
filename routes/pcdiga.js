@@ -22,18 +22,21 @@ routes.get("/api", (req, res) => {
     const browser = await puppeteer.launch({ headless: false });
     const page = await browser.newPage();
 
-//GPU Name
-const selectorGpuName = "#__next > div.z-1.flex.flex-col.justify-between.min-h-screen > div.z-1.base-container.py-5.bg-background.pb-28.flex-grow > main > div > div.grid.content-start.lg\\:grid-flow-col.lg\\:grid-cols-catalog.xl\\:grid-cols-catalog-md.\\32 xl\\:grid-cols-catalog-lg.gap-2.md\\:gap-4 > div:nth-child(2) > div:nth-child(2) > div > div > div > a"
+    //GPU Name
+    const selectorGpuName =
+      "#__next > div.z-1.flex.flex-col.justify-between.min-h-screen > div.z-1.base-container.py-5.bg-background.pb-28.flex-grow > main > div > div.grid.content-start.lg\\:grid-flow-col.lg\\:grid-cols-catalog.xl\\:grid-cols-catalog-md.\\32 xl\\:grid-cols-catalog-lg.gap-2.md\\:gap-4 > div:nth-child(2) > div:nth-child(2) > div > div > div > a";
 
-//GPU Id
-const selectorGpuId = "#__next > div.z-1.flex.flex-col.justify-between.min-h-screen > div.z-1.base-container.py-5.bg-background.pb-28.flex-grow > main > div > div.grid.content-start.lg\\:grid-flow-col.lg\\:grid-cols-catalog.xl\\:grid-cols-catalog-md.\\32 xl\\:grid-cols-catalog-lg.gap-2.md\\:gap-4 > div:nth-child(2) > div:nth-child(2) > div > div > div > div.mt-2.mb-1\\.5.h-4.lg\\:h-4.text-xxs.md\\:text-xs"
+    //GPU Id
+    const selectorGpuId =
+      "#__next > div.z-1.flex.flex-col.justify-between.min-h-screen > div.z-1.base-container.py-5.bg-background.pb-28.flex-grow > main > div > div.grid.content-start.lg\\:grid-flow-col.lg\\:grid-cols-catalog.xl\\:grid-cols-catalog-md.\\32 xl\\:grid-cols-catalog-lg.gap-2.md\\:gap-4 > div:nth-child(2) > div:nth-child(2) > div > div > div > div.mt-2.mb-1\\.5.h-4.lg\\:h-4.text-xxs.md\\:text-xs";
 
-//GPU Stock
-const selectorGpuStock = "#__next > div.z-1.flex.flex-col.justify-between.min-h-screen > div.z-1.base-container.py-5.bg-background.pb-28.flex-grow > main > div > div.grid.content-start.lg\\:grid-flow-col.lg\\:grid-cols-catalog.xl\\:grid-cols-catalog-md.\\32 xl\\:grid-cols-catalog-lg.gap-2.md\\:gap-4 > div:nth-child(2) > div:nth-child(2) > div > div > div:nth-child(1) > div:nth-child(5) > div"
+    //GPU Stock
+    const selectorGpuStock =
+      "#__next > div.z-1.flex.flex-col.justify-between.min-h-screen > div.z-1.base-container.py-5.bg-background.pb-28.flex-grow > main > div > div.grid.content-start.lg\\:grid-flow-col.lg\\:grid-cols-catalog.xl\\:grid-cols-catalog-md.\\32 xl\\:grid-cols-catalog-lg.gap-2.md\\:gap-4 > div:nth-child(2) > div:nth-child(2) > div > div > div > div:nth-child(5) > div";
 
-//GPU Price
-const selectorGpuPrice = "#__next > div.z-1.flex.flex-col.justify-between.min-h-screen > div.z-1.base-container.py-5.bg-background.pb-28.flex-grow > main > div > div.grid.content-start.lg\\:grid-flow-col.lg\\:grid-cols-catalog.xl\\:grid-cols-catalog-md.\\32 xl\\:grid-cols-catalog-lg.gap-2.md\\:gap-4 > div:nth-child(2) > div:nth-child(2) > div > div > div> div.mt-2.flex.justify-between.flex-wrap.items-center.gap-x-2 > div > div.font-extrabold.text-lg.md\\:text-2xl.text-primary"
-
+    //GPU Price
+    const selectorGpuPrice =
+      "#__next > div.z-1.flex.flex-col.justify-between.min-h-screen > div.z-1.base-container.py-5.bg-background.pb-28.flex-grow > main > div > div.grid.content-start.lg\\:grid-flow-col.lg\\:grid-cols-catalog.xl\\:grid-cols-catalog-md.\\32 xl\\:grid-cols-catalog-lg.gap-2.md\\:gap-4 > div:nth-child(2) > div:nth-child(2) > div > div > div> div.mt-2.flex.justify-between.flex-wrap.items-center.gap-x-2 > div > div.font-extrabold.text-lg.md\\:text-2xl.text-primary";
 
     let pages = 3;
     let test = [];
@@ -45,64 +48,43 @@ const selectorGpuPrice = "#__next > div.z-1.flex.flex-col.justify-between.min-h-
       );
 
       //GPU NAME
-      await page
-        .waitForSelector(
-          "#__next > div.z-1.flex.flex-col.justify-between.min-h-screen > div.z-1.base-container.py-5.bg-background.pb-28.flex-grow > main > div > div.grid.content-start.lg\\:grid-flow-col.lg\\:grid-cols-catalog.xl\\:grid-cols-catalog-md.\\32 xl\\:grid-cols-catalog-lg.gap-2.md\\:gap-4 > div:nth-child(2) > div:nth-child(2) > div > div > div > a"
-        )
-        .then(() => console.log("Gpu name -> check"));
-
-      const gpuName = await page.evaluate(() =>
-        Array.from(
-          document.querySelectorAll(
-            "#__next > div.z-1.flex.flex-col.justify-between.min-h-screen > div.z-1.base-container.py-5.bg-background.pb-28.flex-grow > main > div > div.grid.content-start.lg\\:grid-flow-col.lg\\:grid-cols-catalog.xl\\:grid-cols-catalog-md.\\32 xl\\:grid-cols-catalog-lg.gap-2.md\\:gap-4 > div:nth-child(2) > div:nth-child(2) > div > div > div > a"
-          ),
-          (element) => element.textContent
-        )
+      await page.waitForSelector(selectorGpuName);
+      const gpuName = await page.$$eval(selectorGpuName, (options) =>
+        options.map((option) => option.textContent)
       );
-      console.log(gpuName);
+        console.log(gpuName);
 
       //GPU ID
-      // #__next > div.z-1.flex.flex-col.justify-between.min-h-screen > div.z-1.base-container.py-5.bg-background.pb-28.flex-grow > main > div > div.grid.content-start.lg\:grid-flow-col.lg\:grid-cols-catalog.xl\:grid-cols-catalog-md.\32 xl\:grid-cols-catalog-lg.gap-2.md\:gap-4 > div:nth-child(2) > div:nth-child(2) > div > div > div > div.mt-2.mb-1\.5.h-4.lg\:h-4.text-xxs.md\:text-xs
-      await page
-        .waitForSelector(
-          "#__next > div.z-1.flex.flex-col.justify-between.min-h-screen > div.z-1.base-container.py-5.bg-background.pb-28.flex-grow > main > div > div.grid.content-start.lg\\:grid-flow-col.lg\\:grid-cols-catalog.xl\\:grid-cols-catalog-md.\\32 xl\\:grid-cols-catalog-lg.gap-2.md\\:gap-4 > div:nth-child(2) > div:nth-child(2) > div > div > div > div.mt-2.mb-1\\.5.h-4.lg\\:h-4.text-xxs.md\\:text-xs"
-        )
-        .then(() => console.log("gpu Id -> check"));
-
-      const gpuId = await page.evaluate(() =>
-        Array.from(
-          document.querySelectorAll(
-            "#__next > div.z-1.flex.flex-col.justify-between.min-h-screen > div.z-1.base-container.py-5.bg-background.pb-28.flex-grow > main > div > div.grid.content-start.lg\\:grid-flow-col.lg\\:grid-cols-catalog.xl\\:grid-cols-catalog-md.\\32 xl\\:grid-cols-catalog-lg.gap-2.md\\:gap-4 > div:nth-child(2) > div:nth-child(2) > div > div > div > div.mt-2.mb-1\\.5.h-4.lg\\:h-4.text-xxs.md\\:text-xs"
-          ),
-          (element) => element.textContent
-        )
+      await page.waitForSelector(selectorGpuId);
+      const gpuId = await page.$$eval(selectorGpuId, (options) =>
+        options.map((option) => option.textContent)
       );
       console.log(gpuId);
 
       //GPU Stock
-      const gpuStock = "#__next > div.z-1.flex.flex-col.justify-between.min-h-screen > div.z-1.base-container.py-5.bg-background.pb-28.flex-grow > main > div > div.grid.content-start.lg\:grid-flow-col.lg\:grid-cols-catalog.xl\:grid-cols-catalog-md.\32 xl\:grid-cols-catalog-lg.gap-2.md\:gap-4 > div:nth-child(2) > div:nth-child(2) > div > div > div:nth-child(1) > div:nth-child(5) > div"
-   //identify element
-   const f = await page.$("#__next > div.z-1.flex.flex-col.justify-between.min-h-screen > div.z-1.base-container.py-5.bg-background.pb-28.flex-grow > main > div > div.grid.content-start.lg\\:grid-flow-col.lg\\:grid-cols-catalog.xl\\:grid-cols-catalog-md.\\32 xl\\:grid-cols-catalog-lg.gap-2.md\\:gap-4 > div:nth-child(2) > div:nth-child(2) > div > div > div:nth-child(1) > div:nth-child(5) > div")
-   //obtain text
-   const text = await (await f.getProperty('className')).jsonValue()
-   console.log("Text is: " + text)
+      await page.waitForSelector(selectorGpuStock);
+      const gpuStock = await page.$$eval(selectorGpuStock, (options) =>
+        options.map((option) => option.className)
+      );
+
+      const gpuStockStatus = [];
+
+      let green =
+        "stock_status_component flex items-center md:items-start gap-x-2 text-green";
+
+      for (let i = 0; gpuStock.length > i; i++) {
+        if (gpuStock[i] == green) {
+          gpuStockStatus.push(true);
+        } else {
+          gpuStockStatus.push(false);
+        }
+      }
+      console.log(gpuStock);
 
       //GPU PRICE
-      //"#__next > div.z-1.flex.flex-col.justify-between.min-h-screen > div.z-1.base-container.py-5.bg-background.pb-28.flex-grow > main > div > div.grid.content-start.lg\\:grid-flow-col.lg\\:grid-cols-catalog.xl\\:grid-cols-catalog-md.\\32 xl\\:grid-cols-catalog-lg.gap-2.md\\:gap-4 > div:nth-child(2) > div:nth-child(2) > div.grid.justify-between.gap-x-2.gap-y-4.grid-cols-2.sm\\:grid-cols-3.lg\\:grid-cols-prod-list.\\32 xl\\:grid-cols-prod-list-lg > div > div.mt-2.flex.justify-between.flex-wrap.items-center.gap-x-2 > div > div"
-      // #__next > div.z-1.flex.flex-col.justify-between.min-h-screen > div.z-1.base-container.py-5.bg-background.pb-28.flex-grow > main > div > div.grid.content-start.lg\:grid-flow-col.lg\:grid-cols-catalog.xl\:grid-cols-catalog-md.\32 xl\:grid-cols-catalog-lg.gap-2.md\:gap-4 > div:nth-child(2) > div:nth-child(2) > div > div > div> div.mt-2.flex.justify-between.flex-wrap.items-center.gap-x-2 > div > div.font-extrabold.text-lg.md\:text-2xl.text-primary
-      await page
-        .waitForSelector(
-          "#__next > div.z-1.flex.flex-col.justify-between.min-h-screen > div.z-1.base-container.py-5.bg-background.pb-28.flex-grow > main > div > div.grid.content-start.lg\\:grid-flow-col.lg\\:grid-cols-catalog.xl\\:grid-cols-catalog-md.\\32 xl\\:grid-cols-catalog-lg.gap-2.md\\:gap-4 > div:nth-child(2) > div:nth-child(2) > div > div > div> div.mt-2.flex.justify-between.flex-wrap.items-center.gap-x-2 > div > div.font-extrabold.text-lg.md\\:text-2xl.text-primary"
-        )
-        .then(() => console.log("got it Price"));
-
-        const gpuPrice = await page.evaluate(() =>
-        Array.from(
-          document.querySelectorAll(
-            "#__next > div.z-1.flex.flex-col.justify-between.min-h-screen > div.z-1.base-container.py-5.bg-background.pb-28.flex-grow > main > div > div.grid.content-start.lg\\:grid-flow-col.lg\\:grid-cols-catalog.xl\\:grid-cols-catalog-md.\\32 xl\\:grid-cols-catalog-lg.gap-2.md\\:gap-4 > div:nth-child(2) > div:nth-child(2) > div > div > div> div.mt-2.flex.justify-between.flex-wrap.items-center.gap-x-2 > div > div.font-extrabold.text-lg.md\\:text-2xl.text-primary"
-          ),
-          (element) => element.textContent.slice(0, -2)
-        )
+      await page.waitForSelector(selectorGpuPrice);
+      const gpuPrice = await page.$$eval(selectorGpuPrice, (options) =>
+        options.map((option) => option.textContent.slice(0, -2))
       );
       console.log(gpuPrice);
 
@@ -110,10 +92,10 @@ const selectorGpuPrice = "#__next > div.z-1.flex.flex-col.justify-between.min-h-
         let arr = {
           id: gpuId[i2],
           name: gpuName[i2],
+          stock: gpuStockStatus[i2],
           price: gpuPrice[i2],
           priceHistory: [],
         };
-
         test.push(arr);
       }
     }
@@ -136,26 +118,35 @@ const selectorGpuPrice = "#__next > div.z-1.flex.flex-col.justify-between.min-h-
       arr2.push(price);
     }
     await browser.close();
-   
-    
+
     //----------------------------------------------------------
 
-    if (!fs.existsSync("sample.json")) { //Se o ficheiro não existir cria um ficheiro novo e insere o array de produtos nesse ficheiro novo
+    if (!fs.existsSync("sample.json")) {
+      //Se o ficheiro não existir cria um ficheiro novo e insere o array de produtos nesse ficheiro novo
       let data = JSON.stringify(test);
       fs.writeFile("sample.json", data, function (err) {
         if (err) throw err;
         console.log("File is created successfully.");
       });
-    } else { //Se o ficheiro existir
+    } else {
+      //Se o ficheiro existir
       const fileData = JSON.parse(fs.readFileSync("sample.json")); //transforma o sample.json em um array em vez de string
 
-      for (let i2 = 0; test.length > i2; i2++) { //Para cada objeto do array test
-        if (userExists(test[i2].id) == true) { //Se a o produto já existir
+      for (let i2 = 0; test.length > i2; i2++) {
+        //Para cada objeto do array test
+        if (userExists(test[i2].id) == true) {
+          //Se a o produto já existir
           console.log("existe");
-          if (priceSame(test[i2].price, test[i2].id) == true) { //verifica se o preço é mesmo
-            console.log("Preço igual " + test[i2].price + " - " + test[i2].name);      //se for retorna true
-          } else {                                           //Em caso de preço diferente
-            console.log("Preço diferentes " + test[i2].price + " - " + test[i2].name); //Se o preço for diferente insere preço no historico
+          if (priceSame(test[i2].price, test[i2].id) == true) {
+            //verifica se o preço é mesmo
+            console.log(
+              "Preço igual " + test[i2].price + " - " + test[i2].name
+            ); //se for retorna true
+          } else {
+            //Em caso de preço diferente
+            console.log(
+              "Preço diferentes " + test[i2].price + " - " + test[i2].name
+            ); //Se o preço for diferente insere preço no historico
             //console.log(fileData)
             fileData[i2].price = test[i2].price; //Muda o campo currentPrice para o preço novo
 
@@ -164,12 +155,13 @@ const selectorGpuPrice = "#__next > div.z-1.flex.flex-col.justify-between.min-h-
               date: date,
             };
 
-            fileData[i2].priceHistory.push(price);  //insere o preço novo no historico
+            fileData[i2].priceHistory.push(price); //insere o preço novo no historico
 
             console.log(fileData[i2].price);
-            fs.writeFileSync("sample.json", JSON.stringify(fileData)); 
+            fs.writeFileSync("sample.json", JSON.stringify(fileData));
           }
-        } else {  //Insere o novo produto no sample.json
+        } else {
+          //Insere o novo produto no sample.json
           console.log("Produto não existe");
 
           let arr = {
@@ -193,7 +185,8 @@ const selectorGpuPrice = "#__next > div.z-1.flex.flex-col.justify-between.min-h-
       console.log(fileData.length);
     }
 
-    function userExists(username) { // Verifica se já existe um produto com este id part
+    function userExists(username) {
+      // Verifica se já existe um produto com este id part
       const fileData = JSON.parse(fs.readFileSync("sample.json"));
       return fileData.some(function (el) {
         return el.id === username;
@@ -209,7 +202,6 @@ const selectorGpuPrice = "#__next > div.z-1.flex.flex-col.justify-between.min-h-
     }
     await browser.close();
     return res.json(test);
-   
   })();
 });
 
